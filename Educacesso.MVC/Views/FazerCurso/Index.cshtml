@@ -1,0 +1,86 @@
+﻿@model Educacesso.MVC.ViewModels.LicaoViewModel
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+@using (Html.BeginForm())
+{  <div class="form-horizontal">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Escolha o capítulo</h3>
+                    
+                </div>
+                <div class="panel-body">
+
+
+
+                    <div class="col-md-10">
+                        @Html.DropDownList("TituloLicao", "Selecione uma Lição")
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Ver Lição" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        @Html.DisplayNameFor(model => model.Curso.Nome_Curso)
+                    </div>
+
+                    <div>
+                        @Html.DisplayFor(model => model.Curso.Nome_Curso)
+                    </div>
+
+                    <div>
+                        @Html.DisplayNameFor(model => model.Curso.Resumo_Curso)
+                    </div>
+
+                    <div>
+                        @Html.DisplayFor(model => model.Curso.Resumo_Curso)
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+}
+
+
+
+
+
+<div>
+    <br />
+    <h4>Conteudo Curso</h4>
+    <hr />
+    <div class="jumbotron">
+        <p><a class="btn btn-primary btn-lg">Videos</a><a class="btn btn-primary btn-lg">Imagens</a></p>
+        
+        <center> <h1>@Html.DisplayFor(model => model.Titulo_Licao)</h1></center>
+        <br />
+        <br />
+     
+        <p>@Html.DisplayFor(model => model.Conteudo_Licao)</p>
+        
+     
+   
+    </div>
+</div>

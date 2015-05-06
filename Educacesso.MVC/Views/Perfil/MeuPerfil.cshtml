@@ -1,0 +1,41 @@
+﻿@model Educacesso.Domain.Entities.UserIdentity
+
+@{
+    ViewBag.Title = "MeuPerfil";
+}
+
+<br />
+<br />
+<br />
+<br />
+<h2>Meu Perfil</h2>
+
+<div>
+    
+	<hr />
+    <div class="right">
+        
+            @Html.DisplayNameFor(model => model.UserName)
+       
+
+       
+            @Html.DisplayFor(model => model.UserName)
+       
+
+    </div>
+</div>
+
+<div class="list-group">
+    <a href="Index" class="list-group-item active">
+        Perfil
+    </a>
+    <a href="#" class="list-group-item">
+        Mensagens <span class="badge">14</span>
+    </a>
+    <a href="~/Perfil/Seguindo" class="list-group-item">
+       Seguindo
+    </a>
+    <a href="~/Perfil/BuscarUsuario" class="list-group-item">
+        Buscar Usuarios
+    </a>
+</div>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Educacesso.Domain.Entities.UserIdentity>
+
+@{
+    ViewBag.Title = "Amigos";
+}
+<div class="fundoBuscarusuario">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <input type="text" placeholder="buscar usuarios" value=" " class="buscarSeguidores"/>
+    <input type="button" value="Buscar" class="botaoBuscarSeguidores"/>
+    <h4>Siga Usuarios</h4>
+    <div class="list-group">
+        <a href="Index" class="list-group-item ">
+            Perfil
+        </a>
+        <a href="" class="list-group-item">
+            Mensagens <span class="badge">14</span>
+        </a>
+        <a href="~/Perfil/Seguindo" class="list-group-item">
+            Seguinte
+        </a>
+        <a href="~/Perfil/BuscarUsuarios" class="list-group-item active">
+            Buscar Usuarios
+        </a>
+    </div>
+
+
+
+    @foreach (var item in Model)
+    {
+        <div class="listaSeguir">
+          
+            <span class="seguidoresNome">  @Html.DisplayFor(modelItem => item.UserName) </span>
+
+            <span class="qtdSeguidores">Seguidores</span><span class="badge qtdSeguidores novaCor">@Html.DisplayFor(modelItem => item.QtdSeguidores) </span>
+
+            @Html.ActionLink("Seguir", "Adicionar", new { id = item.Id }, new{@class="adicionarSeguir"})
+
+        </div>
+    }
+
+</div>

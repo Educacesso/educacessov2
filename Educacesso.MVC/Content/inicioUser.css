@@ -1,0 +1,95 @@
+﻿@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+}
+
+h1{
+    position:relative;
+    font-size: 20pt;
+    font-family: 'Poiret One', cursive;
+    color: #6965a0;
+    top: 40px;
+    margin-bottom: 70px;
+    left: 70px;
+    
+}
+
+span#label{
+   position:relative;
+    right: 170px;
+    top: -45px;
+    font-size: 14pt;
+    font-family: 'Questrial', sans-serif;
+    color: #00aeff;
+    font-weight: bolder;
+    float:right;
+}
+
+input{
+    position:relative;
+    right: 10px;
+    color: blue;
+    float:right;
+}
+
+ul#lista-ferramentas{
+    position: relative;
+    left: 70px;
+    margin: 0, auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style:none;
+}
+
+ul#lista-ferramentas li{
+    float: left;
+    width:100px;
+    height:100px;
+    margin:30px;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+ul#lista-ferramentas li span {
+    opacity: 0;
+    font-family: 'Questrial', sans-serif;
+    color: #ff6a00;
+    font-weight: bold;
+    /*text-shadow: 1px 0px 0px #ffc254;*/
+    font-size: 9pt;
+    line-height:230px;
+    padding: 5px;
+}
+
+ul#lista-ferramentas li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+
+
+ul#lista-ferramentas li:hover span {
+opacity: 1;
+}
+
+ul#lista-ferramentas li#make_curso img{
+    background: url(Imagens/icones/vector_313_23-256.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100px 100px;
+    
+}
+
+ul#lista-ferramentas li#view_curso{
+    background: url(~/Images/icones/book-256.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 100px 100px;
+    
+}
+
+ul#lista-ferramentas li#search_curso{
+    background: url("~/Images/icones/search-256.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 100px 100px;
+ 
+}

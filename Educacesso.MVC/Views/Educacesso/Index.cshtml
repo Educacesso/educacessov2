@@ -1,0 +1,94 @@
+﻿@model Educacesso.MVC.ViewModels.CursoViewModel
+
+@{
+    ViewBag.Title = "Index";
+    var viewBagQtdCurso = ViewBag.QuantidadeCurso;
+
+}
+
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+
+<div class="well bs-component">
+    <fieldset>
+        <form action="~/Educacesso/Index" method="post">
+
+
+
+            <br />
+            <br />
+
+
+
+            <div class="alert alert-dismissible alert-success pull-left fontlabel2">
+                <h5>Crie um curso</h5>
+
+                <img id="imagemIcone" src="~/Images/icones/write-compose-32.png" />
+                <div class="form-group">
+                    <label for="inputCurso" class="col-lg-2 control-label fontlabel ">Nome </label>
+                    <div class="col-lg-10">
+
+                        <input type="text" class="form-control fontColorWhite" id="inputCurso" placeholder="Insira um nome para o curso" name="inputCurso">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label fontlabel">Resumo</label>
+                    <div class="col-lg-10">
+                        <textarea class="form-control fontColorWhite" rows="3" id="textArea" placeholder="Digite um resumo para o curso" name="textArea"></textarea>
+
+                        <p class="pSmall"><strong>*Cadastre um curso rapidamente preenchendo os campos acima. </strong></p>
+                    </div>
+                    <div class="form-group">
+                        <div class="right">
+                            <input type="submit" class="btn btn-defaultN" value="Cadastrar!" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </form>
+
+        <div class="alert alert-dismissible alert-warning pull-left fontlabel2 ">
+
+            <img id="imagemIcone2" src="~/Images/icones/new_seo-44-48.png" />
+            <h5>Gerencie seus cursos</h5>
+            <p>
+                Nesta sessão você poderá ver e gerenciar seus cursos criados, podendo adicionar
+                mais lições aos seus cursos, ver os comentarios, deletar cursos...
+            </p>
+            <p> <a href="~/Gerenciar/MeusCursos" class="alert-link fontlabel">Clique aqui para entrar</a>.</p>
+
+
+
+        </div>
+
+
+        <div class="alert alert-dismissible alert-info pull-left fontlabel2">
+            <img id="imagemIcone3" src="~/Images/icones/search-32.png" />
+            <h5>Pesquisar Cursos</h5>
+            <p> Utilize nosso mecanismo de busca para encontrar cursos que foram feitos por outros usuários.</p>
+            <p> <a href="~/Pesquisar" class="alert-link fontlabel">Clique aqui</a></p>
+
+        </div>
+
+    </fieldset>
+  
+   
+
+
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

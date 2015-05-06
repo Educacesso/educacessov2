@@ -1,0 +1,16 @@
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EducacessoV2.Application.dll.config
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EducacessoV2.Application.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EducacessoV2.Application.pdb
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\Educacesso.Domain.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\Educacesso.Domain.pdb
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\obj\Debug\EducacessoV2.Application.csprojResolveAssemblyReference.cache
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\obj\Debug\EducacessoV2.Application.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\obj\Debug\EducacessoV2.Application.pdb
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EntityFramework.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EntityFramework.xml
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Thiago\Desktop\EducacessoV2\EducacessoV2\EducacessoV2.Application\bin\Debug\EntityFramework.SqlServer.xml
