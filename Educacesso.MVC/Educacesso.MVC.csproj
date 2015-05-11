@@ -469,7 +469,6 @@
     <Content Include="ckeditor\skins\moono\images\refresh.png" />
     <Content Include="ckeditor\styles.js" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Customizado.css" />
     <Content Include="Content\CSSautocomplente\ui-bg_diagonals-thick_18_b81900_40x40.png" />
     <Content Include="Content\CSSautocomplente\ui-bg_diagonals-thick_20_666666_40x40.png" />
