@@ -11,6 +11,5 @@ namespace Educacesso.Infra.Repositories.Repositories
    public class UserRepository : RepositoryBase<UserIdentity>, IUserRepository
     {
 
-
     }
 }

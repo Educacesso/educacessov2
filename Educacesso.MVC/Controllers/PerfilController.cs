@@ -61,7 +61,7 @@ namespace Educacesso.MVC.Controllers
 
         public ActionResult BuscarUsuarios()
         {
-            var usuario = _userAppService.GetAll(); // PAGINA ADD AMIGO
+            var usuario = _userAppService.GetAll(); // PAGINA ADD AMIGO, Exibe uma lista de usuarios para seguir
 
             return View(usuario);
         }
@@ -72,6 +72,8 @@ namespace Educacesso.MVC.Controllers
             var umAmigo = _userAppService.GetByID(Id);
             int idAmigoAdicionado = _amigoAppService.addAmigo(umAmigo);
 
+			umAmigo.QtdSeguidores += 1;
+			_userAppService.Update(umAmigo);
             _amigoUsuarioAppService.addAmigo(idAmigoAdicionado, User.Identity.GetUserId());
             return RedirectToAction("Index");
         }
