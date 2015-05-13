@@ -1,4 +1,4 @@
-﻿@model List<Educacesso.Domain.Entities.Amigo>
+﻿@model List<Educacesso.Domain.Entities.UserIdentity>
 
     ViewBag.Title = "Index";
 }
@@ -31,10 +31,10 @@
     <div class="listaSeguir">
        
         <span class="seguidoresNome">
-            @Html.DisplayFor(modelItem => item.NomeUsuarioAmigo) </span>
-            <span class="qtdSeguidores">Seguidores</span><span class="badge qtdSeguidores novaCor">0 </span>
+            @Html.DisplayFor(modelItem => item.UserName) </span>
+            <span class="qtdSeguidores">Seguidores</span><span class="badge qtdSeguidores novaCor">@Html.DisplayFor(model => item.QtdSeguidores) </span>
 
-            @Html.ActionLink("Ver cursos", "Adicionar", new { id = item.UserIdentityId }, new { @class = "adicionarSeguir verCanal" })
+            @Html.ActionLink("Ver cursos", "Adicionar", new { id = item.Id }, new { @class = "adicionarSeguir verCanal" })
 
 </div>
 }

@@ -34,6 +34,12 @@ namespace Educacesso.MVC.Controllers
 
         public UserManager<UserIdentity> UserManager { get; private set; }
 
+
+
+
+
+
+        #region Actions
         public ActionResult MeuPerfil()
         {
             var usuarioLogado = _userAppService.GetByID(User.Identity.GetUserId());
@@ -45,8 +51,7 @@ namespace Educacesso.MVC.Controllers
         {
             return RedirectToAction("Manage", "Account");
         }
-        //
-        // GET: /Perfil/
+       
         public ActionResult Seguindo()
         {
           
@@ -54,16 +59,40 @@ namespace Educacesso.MVC.Controllers
             List<AmigoUsuario> lamigoUsuario = _amigoUsuarioAppService.ListaDeIdDeAmigos(User.Identity.GetUserId()); //Buscando os amigos do usuario
             List<Amigo> lamigo = _amigoAppService.ListaAmigosDoUsuario(lamigoUsuario); // uma lista de Amigos Do usuario que está logado
 
+            List<UserIdentity> listaSeguindo = new List<UserIdentity>();
+            foreach (var item in lamigo)
+            {
+             var users =  _userAppService.GetByID(item.UserIdentityId);
+                listaSeguindo.Add(users);
+            }
            
-            return View(lamigo);
+            return View(listaSeguindo);
         }
 
 
         public ActionResult BuscarUsuarios()
         {
             var usuario = _userAppService.GetAll(); // PAGINA ADD AMIGO, Exibe uma lista de usuarios para seguir
+            List<UserIdentity> list = usuario.ToList();
 
-            return View(usuario);
+            List<AmigoUsuario> lamigoUsuario = _amigoUsuarioAppService.ListaDeIdDeAmigos(User.Identity.GetUserId()); //Buscando os amigos do usuario
+            List<Amigo> lamigo = _amigoAppService.ListaAmigosDoUsuario(lamigoUsuario);
+
+            #region remover da lista amigos que o usuario já segue
+            foreach (var usuarios in usuario)
+            {
+                foreach (var meusAmigos in lamigo)
+                {
+                    if (usuarios.Id == meusAmigos.UserIdentityId || usuarios.Id == User.Identity.GetUserId())
+                    {
+                        list.Remove(usuarios);
+                    }
+                }
+
+            }
+            #endregion
+
+            return View(list);
         }
 
         
@@ -77,5 +106,9 @@ namespace Educacesso.MVC.Controllers
             _amigoUsuarioAppService.addAmigo(idAmigoAdicionado, User.Identity.GetUserId());
             return RedirectToAction("Index");
         }
+
+        #endregion
+
+
     }
 }
