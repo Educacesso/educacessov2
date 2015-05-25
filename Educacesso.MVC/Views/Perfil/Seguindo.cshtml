@@ -34,7 +34,7 @@
             @Html.DisplayFor(modelItem => item.UserName) </span>
             <span class="qtdSeguidores">Seguidores</span><span class="badge qtdSeguidores novaCor">@Html.DisplayFor(model => item.QtdSeguidores) </span>
 
-            @Html.ActionLink("Ver cursos", "Adicionar", new { id = item.Id }, new { @class = "adicionarSeguir verCanal" })
+            @Html.ActionLink("Ver cursos", "Index", "ListaCursos", new { id = item.Id }, new { @class = "adicionarSeguir verCanal" })
 
 </div>
 }

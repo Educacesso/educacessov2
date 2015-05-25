@@ -189,6 +189,7 @@
     <Compile Include="Controllers\FazerCursoController.cs" />
     <Compile Include="Controllers\GerenciarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ListaCursosController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\PesquisarController.cs" />
     <Compile Include="Global.asax.cs">
@@ -576,6 +577,7 @@
     <Content Include="Views\Perfil\Seguindo.cshtml" />
     <Content Include="Views\Perfil\BuscarUsuarios.cshtml" />
     <Content Include="Views\Perfil\MeuPerfil.cshtml" />
+    <Content Include="Views\ListaCursos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
