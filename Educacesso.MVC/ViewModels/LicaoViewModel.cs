@@ -13,13 +13,11 @@ namespace Educacesso.MVC.ViewModels
         public int LicaoID { get; set; }
 
         [Required(ErrorMessage = "Insira o Titulo da Licao")]
-        [MaxLength(150, ErrorMessage = "Maximo {0} Caracteres")]
-        [MinLength(2, ErrorMessage = "Minimo {0} caracteres")]
+        [MaxLength(150, ErrorMessage = "Maximo 150 Caracteres")]
+        [MinLength(10, ErrorMessage = "Minimo 10 caracteres" )]
         public string Titulo_Licao { get; set; }
 
         [Required(ErrorMessage = "Insira o Conteudo da Licao")]
-        [MaxLength(150, ErrorMessage = "Maximo {0} Caracteres")]
-        [MinLength(2, ErrorMessage = "Minimo {0} caracteres")]
         public string Conteudo_Licao { get; set; }
 
         public int CursoID { get; set; }
