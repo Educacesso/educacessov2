@@ -41,7 +41,7 @@ namespace Educacesso.MVC.Controllers
       
 
         [HttpPost] 
-
+		
         public ActionResult Index(string inputCurso, string textArea)
         {
             Curso Curso = new Curso

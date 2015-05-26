@@ -13,6 +13,7 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+	
 }
 
 body {
@@ -8875,6 +8876,7 @@ img#imagemIcone3 {
 
 .btnPesquisar {
     position: absolute;
+	
     left: 418px;
     bottom: 330px;
     border-radius: 8px;
@@ -8930,7 +8932,7 @@ p#novaFonteP{
 }
 
 [type=text].form-control.searchColor{
-    background-color: rgb(112, 186, 239);
+    background-color: #cecece;
 }
 
 .contaEdit{
@@ -9040,3 +9042,4 @@ p#novaFonteP{
 .fontColorWhite{
     color: #ffffff;
 }
+
