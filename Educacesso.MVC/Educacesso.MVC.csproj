@@ -501,6 +501,8 @@
     <Content Include="Content\Images\icones\facebook.png" />
     <Content Include="Content\Images\icones\favicon.ico" />
     <Content Include="Content\Images\icones\github.png" />
+    <Content Include="Images\icones\facebook.png" />
+    <Content Include="Images\icones\github.png" />
     <Content Include="Images\icones\new_seo-44-48.png" />
     <Content Include="Content\Images\icones\plus.png" />
     <Content Include="Content\Images\icones\school-learn-study-teacher-teaching-256.png" />
@@ -510,6 +512,7 @@
     <Content Include="Content\Images\icones\twitter.png" />
     <Content Include="Content\Images\icones\vector_313_08-256.png" />
     <Content Include="Content\Images\icones\vector_313_23-256.png" />
+    <Content Include="Images\icones\twitter.png" />
     <Content Include="Images\icones\write-compose-32.png" />
     <Content Include="Images\IdeiaSchool.jpg" />
     <Content Include="Images\logoEducacesso.png" />
