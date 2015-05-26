@@ -3,6 +3,7 @@
 
 @{
     ViewBag.Title = "Index";
+
 }
 
 <br />
@@ -77,9 +78,15 @@
         <center> <h1>@Html.DisplayFor(model => model.Titulo_Licao)</h1></center>
         <br />
         <br />
-     
-        <p>@Html.DisplayFor(model => model.Conteudo_Licao)</p>
-        
+		 
+			
+			<div>@Html.Raw(Model.Conteudo_Licao)</div>
+		
+
+		
+      
+
+		
      
    
     </div>

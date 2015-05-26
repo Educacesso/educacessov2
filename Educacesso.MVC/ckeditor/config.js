@@ -28,6 +28,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Remove some buttons provided by the standard plugins, which are
 	// not needed in the Standard(s) toolbar.
+	config.htmlEncodeOutput = true;
 	config.removeButtons = 'Underline,Subscript,Superscript';
 
 	// Set the most common block elements.

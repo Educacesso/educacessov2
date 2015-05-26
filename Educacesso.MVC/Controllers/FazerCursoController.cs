@@ -29,8 +29,8 @@ namespace Educacesso.MVC.Controllers
             
             ViewBag.TituloLicao = new SelectList(_licaoApp.LicoesDoCursoSelecionado(id), "LicaoID", "Titulo_Licao");
             var licaoViewModel = Mapper.Map<IEnumerable<Licao>, IEnumerable<LicaoViewModel>>(_licaoApp.GetAll());
-
-            return View();
+			var licaoView = new LicaoViewModel();
+            return View(licaoView);
         }
 
         [HttpPost, ActionName("Index")]
@@ -39,7 +39,7 @@ namespace Educacesso.MVC.Controllers
         {
             var licaoSelecionada = Mapper.Map<Licao, LicaoViewModel>(_licaoApp.GetLicaoById(TituloLicao));
             ViewBag.TituloLicao = new SelectList(_licaoApp.LicoesDoCursoSelecionado(licaoSelecionada.CursoID), "LicaoID", "Titulo_Licao");
-           // return RedirectToAction("Curso", licaoSelecionada);
+          
 
             return View(licaoSelecionada);
         }
