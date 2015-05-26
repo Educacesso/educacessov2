@@ -36,15 +36,6 @@ namespace Educacesso.MVC.Controllers
             return View(cursoViewModel);
         }
 
-        /* [HttpPost]
-         [ValidateAntiForgeryToken]
-         public ActionResult MeusCursos(int curso)
-         {
-            int cursoID = curso;
-
-             return RedirectToAction("NovaLicao", cursoID);
-         }*/
-
 
         public ActionResult NovaLicao(int cursoId)
         {

@@ -35,7 +35,7 @@ namespace Educacesso.MVC.Controllers
 
         [HttpPost, ActionName("Index")]
         [ValidateAntiForgeryToken]
-        public ActionResult Licao(int TituloLicao ) // TituloLicao = ID da lição
+        public ActionResult Licao(int TituloLicao) // TituloLicao = ID da lição
         {
 			
 			
