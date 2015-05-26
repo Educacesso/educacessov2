@@ -35,13 +35,16 @@ namespace Educacesso.MVC.Controllers
 
         [HttpPost, ActionName("Index")]
         [ValidateAntiForgeryToken]
-        public ActionResult Licao(int TituloLicao) // TituloLicao = ID da lição
+        public ActionResult Licao(int TituloLicao ) // TituloLicao = ID da lição
         {
-            var licaoSelecionada = Mapper.Map<Licao, LicaoViewModel>(_licaoApp.GetLicaoById(TituloLicao));
+			
+			
+			 var licaoSelecionada = Mapper.Map<Licao, LicaoViewModel>(_licaoApp.GetLicaoById(TituloLicao));
             ViewBag.TituloLicao = new SelectList(_licaoApp.LicoesDoCursoSelecionado(licaoSelecionada.CursoID), "LicaoID", "Titulo_Licao");
-          
+			
 
-            return View(licaoSelecionada);
+
+			return View(licaoSelecionada);
         }
 
      
